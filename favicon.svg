@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <linearGradient id="planeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4af37;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b8941f;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" fill="#1a1a2e"/>
+  <g transform="translate(16,16)">
+    <!-- Airplane icon -->
+    <path d="M-8,-2 L-6,-1 L2,1 L6,0 L8,1 L6,2 L2,3 L-6,1 L-8,2 L-6,0 Z" fill="url(#planeGradient)"/>
+    <path d="M-2,-6 L0,-8 L2,-6 L0,-2 Z" fill="url(#planeGradient)"/>
+    <path d="M-4,2 L-2,4 L0,2 Z" fill="url(#planeGradient)"/>
+    <path d="M0,2 L2,4 L4,2 Z" fill="url(#planeGradient)"/>
+  </g>
+</svg>

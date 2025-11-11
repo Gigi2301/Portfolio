@@ -59,6 +59,10 @@
   box-shadow:0 0 10px rgba(212,175,55,0.3);
   transition:all 0.3s ease;
 }
+    .brand-icon svg {
+    vertical-align: middle;
+    margin-bottom: 2px;
+}
 .brand-icon:hover {
   background:#e6c55a;
   box-shadow:0 0 15px rgba(212,175,55,0.5);
@@ -183,9 +187,12 @@
   <!-- NAVBAR -->
   <nav class="topnav" role="navigation" aria-label="Primary">
   <a class="brand" href="#top">
-    <span class="brand-icon" style="display:inline-block;font-size:13px;color:#000000;background:#e1c14c;border-radius:6px;padding:10px 20px;">✈️</span>
-    PLC
-</a>
+   <span class="brand-icon" style="display:inline-block;background:#e1c14c;border-radius:6px;padding:10px 20px;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000000" viewBox="0 0 16 16">
+        <path d="M6.428 1.151c.14-.42.77-.56 1.02-.16l3.637 5.868 4.623.948a.5.5 0 0 1 .0.984l-4.623.948-3.637 5.868c-.25.4-.88.26-1.02-.16l-.908-2.726L2.5 9.5l-2-.5V7l2-.5 2.02-2.225.908-2.726z"/>
+    </svg>
+</span>
+PLC
 </a>
     <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
     <ul class="nav-links">

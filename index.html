@@ -48,43 +48,48 @@
       font-weight:700;padding:8px 14px;border-radius:999px}
     
 /* === Brand (logo + testo PLC) === */
-.brand{
-  display:inline-flex;
-  align-items:center;
-  gap:10px;
-  text-decoration:none;
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
 }
 
-.brand-icon{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  background:#d4af37;
-  padding:6px 10px;
-  border-radius:8px;
-  box-shadow:0 0 10px rgba(212,175,55,.25);
+.brand-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(212, 175, 55, 0.2); /* meno pieno, effetto leggero */
+  border: 1.5px solid #d4af37;         /* bordo dorato sottile */
+  padding: 3px 5px;                    /* margine più stretto */
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
 
-.brand-mark{
-  width:32px;
-  height:auto;
-  max-height:24px;
-  display:block;
-  filter:brightness(0) contrast(1.2);
+.brand-icon:hover {
+  background: rgba(212, 175, 55, 0.35);
+  border-color: #e6c55a;
+  transform: translateY(-1px);
 }
 
-.brand-text{
-  color:#d4af37;
-  font-weight:700;
-  letter-spacing:.5px;
-  font-size:1.2rem;
-  line-height:1;
+.brand-mark {
+  width: 38px;           /* 🔹 più grande (modifica qui se vuoi ancora più visibile) */
+  height: auto;
+  display: block;
+  filter: brightness(1.1) contrast(1.2);
 }
 
-@media (max-width:600px){
-  .brand-text{font-size:1.05rem}
-  .brand-icon{padding:5px 9px}
-  .brand-mark{width:20px;height:auto}
+.brand-text {
+  color: #d4af37;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+@media (max-width: 600px) {
+  .brand-mark { width: 30px; }
+  .brand-text { font-size: 1rem; }
 }
 
     /* HERO */

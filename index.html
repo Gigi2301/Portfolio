@@ -46,6 +46,27 @@
     .topnav .nav-links a:hover{background:rgba(212,175,55,.12)}
     .btn-download{background:linear-gradient(135deg,#d4af37,#b8941f);color:#222 !important;
       font-weight:700;padding:8px 14px;border-radius:999px}
+    
+    /* === Brand Icon (logo ✈️ dorato) === */
+.brand-icon {
+  display:inline-block;
+  font-size:18px;
+  background:#d4af37;
+  color:#111;
+  padding:8px 16px;
+  border-radius:6px;
+  font-weight:700;
+  box-shadow:0 0 10px rgba(212,175,55,0.3);
+  transition:all 0.3s ease;
+}
+.brand-icon:hover {
+  background:#e6c55a;
+  box-shadow:0 0 15px rgba(212,175,55,0.5);
+  transform:translateY(-2px);
+}
+@media(max-width:600px){
+  .brand-icon{font-size:16px;padding:6px 12px;}
+}
 
     /* HERO */
     .hero-section{height:100vh;display:flex;align-items:center;justify-content:center;overflow:hidden;background:transparent;
@@ -162,7 +183,7 @@
   <!-- NAVBAR -->
   <nav class="topnav" role="navigation" aria-label="Primary">
    <a class="brand" href="#top">
-  <span class="brand-icon">✈️</span>
+  <span class="brand-icon">PLC✈️</span>
 </a>
     <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
     <ul class="nav-links">

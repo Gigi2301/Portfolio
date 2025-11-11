@@ -47,29 +47,44 @@
     .btn-download{background:linear-gradient(135deg,#d4af37,#b8941f);color:#222 !important;
       font-weight:700;padding:8px 14px;border-radius:999px}
     
-    /* === Brand Icon (logo ✈️ dorato) === */
-.brand-icon {
-  display:inline-block;
-  font-size:18px;
+/* === Brand (logo + testo PLC) === */
+.brand{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  text-decoration:none;
+}
+
+.brand-icon{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
   background:#d4af37;
-  color:#111;
-  padding:8px 16px;
-  border-radius:6px;
+  padding:6px 10px;
+  border-radius:8px;
+  box-shadow:0 0 10px rgba(212,175,55,.25);
+}
+
+.brand-mark{
+  width:26px;
+  height:auto;
+  max-height:24px;
+  display:block;
+  filter:brightness(0) contrast(1.2);
+}
+
+.brand-text{
+  color:#d4af37;
   font-weight:700;
-  box-shadow:0 0 10px rgba(212,175,55,0.3);
-  transition:all 0.3s ease;
+  letter-spacing:.5px;
+  font-size:1.2rem;
+  line-height:1;
 }
-    .brand-icon svg {
-    vertical-align: middle;
-    margin-bottom: 2px;
-}
-.brand-icon:hover {
-  background:#e6c55a;
-  box-shadow:0 0 15px rgba(212,175,55,0.5);
-  transform:translateY(-2px);
-}
-@media(max-width:600px){
-  .brand-icon{font-size:16px;padding:6px 12px;}
+
+@media (max-width:600px){
+  .brand-text{font-size:1.05rem}
+  .brand-icon{padding:5px 9px}
+  .brand-mark{width:20px;height:auto}
 }
 
     /* HERO */

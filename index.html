@@ -1,24 +1,26 @@
 <!DOCTYPE html>
-<html lang="it" id="top">
+<html lang="en" id="top">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Pier Luigi Cherchi - Flight Operations & Human Factors. Competenze in aviazione, sistemi e psicologia applicata per operazioni efficaci e umane." />
+  <meta name="description" content="Pier Luigi Cherchi – Flight Operations, Mission Systems & Human Factors. I align technology, procedures and people to make complex aviation environments safer, clearer and more reliable." />
   <title>Pier Luigi Cherchi | Flight Operations & Human Factors</title>
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <!-- (Facoltativo) immagine social -->
+
+  <!-- Social -->
   <meta property="og:title" content="Pier Luigi Cherchi | Flight Operations & Human Factors" />
-  <meta property="og:description" content="I build bridges between systems and people. Flight Ops, Human Factors, Training." />
+  <meta property="og:description" content="Aviation systems, dispatch and applied psychology. I build bridges between data, crews and mission-critical decisions." />
   <meta property="og:image" content="assets/og-image.png" />
   <meta property="og:url" content="https://gigi2301.github.io/Portfolio/" />
   <meta name="twitter:card" content="summary_large_image" />
 
+  <!-- Schema.org -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":"Person",
     "name":"Pier Luigi Cherchi",
-    "jobTitle":"Flight Dispatcher & Human Factors",
+    "jobTitle":"Flight Ops & Human Factors",
     "email":"mailto:cherchi.p@yahoo.com",
     "telephone":"+393806468956",
     "url":"https://gigi2301.github.io/Portfolio/",
@@ -29,217 +31,656 @@
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
     html{scroll-behavior:smooth}
-    body{font-family:Arial, sans-serif;overflow-x:hidden;background:#1a1a1a;position:relative;color:rgba(255,255,255,.92)}
+    body{
+      font-family:Arial, sans-serif;
+      overflow-x:hidden;
+      background:#1a1a1a;
+      position:relative;
+      color:rgba(255,255,255,.92)
+    }
     body::before{
-      content:"";position:fixed;inset:0;background-image:url('background.svg');
-      background-size:cover;background-position:center;background-repeat:no-repeat;background-attachment:fixed;
-      filter:contrast(1.3) brightness(1.5) invert(1);opacity:.25;z-index:-1;pointer-events:none
+      content:"";
+      position:fixed;
+      inset:0;
+      background-image:url('background.svg');
+      background-size:cover;
+      background-position:center;
+      background-repeat:no-repeat;
+      background-attachment:fixed;
+      filter:contrast(1.3) brightness(1.5) invert(1);
+      opacity:.25;
+      z-index:-1;
+      pointer-events:none
     }
 
     /* NAVBAR */
-    .topnav{position:sticky;top:0;z-index:9999;display:flex;align-items:center;justify-content:space-between;
-      padding:10px 20px;background:rgba(0,0,0,.55);backdrop-filter:blur(8px);border-bottom:1px solid rgba(212,175,55,.15)}
-    .topnav .brand{color:#d4af37;text-decoration:none;font-weight:700;letter-spacing:.5px}
-    .topnav .nav-toggle{display:none;background:none;border:0;color:#fff;font-size:1.2rem}
-    .topnav .nav-links{display:flex;gap:16px;list-style:none}
-    .topnav .nav-links a{color:#fff;text-decoration:none;padding:8px 10px;border-radius:8px}
-    .topnav .nav-links a:hover{background:rgba(212,175,55,.12)}
-    .btn-download{background:linear-gradient(135deg,#d4af37,#b8941f);color:#222 !important;
-      font-weight:700;padding:8px 14px;border-radius:999px}
-    
-/* === Brand (logo + testo PLC) – versione unica === */
-.brand{
-  display:inline-flex;
-  align-items:center;
-  gap:10px;
-  text-decoration:none;
-}
+    .topnav{
+      position:sticky;
+      top:0;
+      z-index:9999;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:10px 20px;
+      background:rgba(0,0,0,.55);
+      backdrop-filter:blur(8px);
+      border-bottom:1px solid rgba(212,175,55,.15)
+    }
+    .topnav .nav-toggle{
+      display:none;
+      background:none;
+      border:0;
+      color:#fff;
+      font-size:1.2rem
+    }
+    .topnav .nav-links{
+      display:flex;
+      gap:16px;
+      list-style:none;
+      align-items:center;
+    }
+    .topnav .nav-links a{
+      color:#fff;
+      text-decoration:none;
+      padding:8px 10px;
+      border-radius:8px
+    }
+    .topnav .nav-links a:hover{
+      background:rgba(212,175,55,.12)
+    }
+    .btn-download{
+      background:linear-gradient(135deg,#d4af37,#b8941f);
+      color:#222 !important;
+      font-weight:700;
+      padding:8px 14px;
+      border-radius:999px
+    }
 
-.brand-icon{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  background:transparent;                         /* niente riempimento */
-  border:1px solid rgba(212,175,55,0.45);         /* bordo dorato sottile */
-  padding:2.5px 2.5px;                                /* bordo meno invadente */
-  border-radius:10px;
-  box-shadow:0 0 6px rgba(212,175,55,0.25);       /* glow leggero */
-  transition:all .25s ease;
-}
-.brand-icon:hover{
-  border-color:#e6c55a;
-  box-shadow:0 0 12px rgba(230,197,90,0.40);
-  transform:translateY(-1px);
-}
+    /* Brand */
+    .brand{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      text-decoration:none;
+    }
+    .brand-icon{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      background:transparent;
+      border:1px solid rgba(212,175,55,0.45);
+      padding:2.5px 2.5px;
+      border-radius:10px;
+      box-shadow:0 0 6px rgba(212,175,55,0.25);
+      transition:all .25s ease;
+    }
+    .brand-icon:hover{
+      border-color:#e6c55a;
+      box-shadow:0 0 12px rgba(230,197,90,0.40);
+      transform:translateY(-1px);
+    }
+    .brand-mark{
+      width:40px;
+      height:auto;
+      display:block;
+      filter:brightness(2.5) contrast(20.0);
+    }
+    .brand-mark:hover{
+      filter:brightness(2) contrast(1.2);
+    }
+    .brand-text{
+      color:#d4af37;
+      font-weight:700;
+      letter-spacing:.5px;
+      font-size:1.1rem;
+      line-height:1;
+    }
 
-.brand-mark{
-  width:40px;     /* logo grande ma pulito (aumenta/diminuisci qui) */
-  height:auto;
-  display:block;
-  filter:brightness(2.5) contrast(20.0);
-}
+    /* Language switch */
+    .lang-switch button{
+      background:none;
+      border:0;
+      color:#fff;
+      cursor:pointer;
+      font-size:.9rem;
+      padding:0;
+    }
+    .lang-switch button.active{
+      color:#d4af37;
+      font-weight:700;
+    }
+    .lang-switch span.sep{
+      color:#777;
+      margin:0 4px;
+    }
 
-.brand-text{
-  color:#d4af37;
-  font-weight:700;
-  letter-spacing:.5px;
-  font-size:1.1rem;
-  line-height:1;
-}
-    .brand-mark:hover {
-  filter: brightness(2) contrast(1.2); /* effetto chiaro al passaggio */
-}
-
-/* Mobile */
-@media (max-width:600px){
-  .brand-mark{width:30px;}
-  .brand-text{font-size:1rem;}
-}
+    @media (max-width:600px){
+      .brand-mark{width:30px;}
+      .brand-text{font-size:1rem;}
+    }
 
     /* HERO */
-    .hero-section{height:100vh;display:flex;align-items:center;justify-content:center;overflow:hidden;background:transparent;
-      background-image:url('background.webp');background-size:cover;background-repeat:no-repeat;background-position:center;background-attachment:fixed;
-      filter:brightness(.7) contrast(1.3) saturate(1.2) sepia(.1) hue-rotate(-5deg);image-rendering:-webkit-optimize-contrast;image-rendering:crisp-edges;position:relative}
-    .hero-section::before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,0,0,.4),rgba(212,175,55,.1));mix-blend-mode:overlay;opacity:.6;z-index:1}
-    .hero-content{z-index:2;color:#fff;text-align:center;padding:20px;animation:fadeInUp 1s ease;position:relative}
-    .hero-content::before{content:"";position:absolute;top:-15px;left:-15px;right:-15px;bottom:-15px;
-      background:radial-gradient(ellipse at center,rgba(0,0,0,.3) 0%, rgba(0,0,0,.2) 40%, rgba(0,0,0,.1) 70%, transparent 100%);z-index:-1;border-radius:15px}
-    .hero-title{font-size:3.2rem;margin-bottom:15px;font-weight:700;letter-spacing:1px;text-shadow:0 0 6px rgba(0,0,0,.5),1px 1px 2px rgba(0,0,0,.6)}
-    .hero-subtitle{font-size:1.3rem;margin-bottom:25px;font-weight:500;text-shadow:0 0 4px rgba(0,0,0,.4),1px 1px 2px rgba(0,0,0,.5);opacity:.9}
-    .hero-description{font-size:1.1rem;max-width:550px;margin:0 auto 35px;line-height:1.6;text-shadow:0 0 3px rgba(0,0,0,.4),1px 1px 1px rgba(0,0,0,.5);opacity:.85}
-    .cta-button{display:inline-block;padding:14px 35px;background:linear-gradient(135deg,#d4af37 0%,#b8941f 100%);color:#2c2c2c;
-      text-decoration:none;border-radius:30px;font-size:1rem;font-weight:600;letter-spacing:.5px;transition:.3s;box-shadow:0 6px 20px rgba(212,175,55,.3),0 0 10px rgba(212,175,55,.1);
-      border:0px solid rgba(255,255,255,.2)}
-    .cta-button:hover{transform:translateY(-2px);background:linear-gradient(135deg,#e6c547,#c9a429);box-shadow:0 8px 25px rgba(212,175,55,.4),0 0 15px rgba(212,175,55,.2)}
+    .hero-section{
+      height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      overflow:hidden;
+      background:transparent;
+      background-image:url('background.webp');
+      background-size:cover;
+      background-repeat:no-repeat;
+      background-position:center;
+      background-attachment:fixed;
+      filter:brightness(.7) contrast(1.3) saturate(1.2) sepia(.1) hue-rotate(-5deg);
+      image-rendering:-webkit-optimize-contrast;
+      image-rendering:crisp-edges;
+      position:relative
+    }
+    .hero-section::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:linear-gradient(135deg,rgba(0,0,0,.4),rgba(212,175,55,.1));
+      mix-blend-mode:overlay;
+      opacity:.6;
+      z-index:1
+    }
+    .hero-content{
+      z-index:2;
+      color:#fff;
+      text-align:center;
+      padding:20px;
+      animation:fadeInUp 1s ease;
+      position:relative
+    }
+    .hero-content::before{
+      content:"";
+      position:absolute;
+      top:-15px;
+      left:-15px;
+      right:-15px;
+      bottom:-15px;
+      background:radial-gradient(ellipse at center,rgba(0,0,0,.3) 0%, rgba(0,0,0,.2) 40%, rgba(0,0,0,.1) 70%, transparent 100%);
+      z-index:-1;
+      border-radius:15px
+    }
+    .hero-title{
+      font-size:3.2rem;
+      margin-bottom:15px;
+      font-weight:700;
+      letter-spacing:1px;
+      text-shadow:0 0 6px rgba(0,0,0,.5),1px 1px 2px rgba(0,0,0,.6)
+    }
+    .hero-subtitle{
+      font-size:1.3rem;
+      margin-bottom:25px;
+      font-weight:500;
+      text-shadow:0 0 4px rgba(0,0,0,.4),1px 1px 2px rgba(0,0,0,.5);
+      opacity:.9
+    }
+    .hero-description{
+      font-size:1.1rem;
+      max-width:550px;
+      margin:0 auto 35px;
+      line-height:1.6;
+      text-shadow:0 0 3px rgba(0,0,0,.4),1px 1px 1px rgba(0,0,0,.5);
+      opacity:.85
+    }
+    .cta-button{
+      display:inline-block;
+      padding:14px 35px;
+      background:linear-gradient(135deg,#d4af37 0%,#b8941f 100%);
+      color:#2c2c2c;
+      text-decoration:none;
+      border-radius:30px;
+      font-size:1rem;
+      font-weight:600;
+      letter-spacing:.5px;
+      transition:.3s;
+      box-shadow:0 6px 20px rgba(212,175,55,.3),0 0 10px rgba(212,175,55,.1);
+      border:0px solid rgba(255,255,255,.2)
+    }
+    .cta-button:hover{
+      transform:translateY(-2px);
+      background:linear-gradient(135deg,#e6c547,#c9a429);
+      box-shadow:0 8px 25px rgba(212,175,55,.4),0 0 15px rgba(212,175,55,.2)
+    }
 
     /* SECTIONS */
-    .content-section{padding:100px 20px;max-width:1200px;margin:0 auto;position:relative}
+    .content-section{
+      padding:100px 20px;
+      max-width:1200px;
+      margin:0 auto;
+      position:relative
+    }
     .section-dark{background:transparent;color:#fff}
     .section-light{background:transparent;color:#fff}
-    .info-card{background:transparent;padding:40px;border-radius:0;margin:50px 0;transform:translateY(50px);opacity:0;transition:.8s}
-    .info-card.visible{transform:translateY(0);opacity:1}
-    .card-title{font-size:2.5rem;margin-bottom:20px;color:#d4af37}
+    .info-card{
+      background:transparent;
+      padding:40px;
+      border-radius:0;
+      margin:50px 0;
+      transform:translateY(50px);
+      opacity:0;
+      transition:.8s
+    }
+    .info-card.visible{
+      transform:translateY(0);
+      opacity:1
+    }
+    .card-title{
+      font-size:2.5rem;
+      margin-bottom:20px;
+      color:#d4af37
+    }
     #about-title{text-align:center}
-    .card-content{font-size:1.1rem;line-height:1.8}
+    .card-content{
+      font-size:1.1rem;
+      line-height:1.8
+    }
 
     /* ABOUT */
-    .about-content{display:flex;align-items:center;gap:40px;margin-top:30px}
-    .profile-photo{width:200px;height:200px;border-radius:50%;border:4px solid #d4af37;box-shadow:0 10px 30px rgba(0,0,0,.3);transition:.3s}
-    .profile-photo:hover{transform:scale(1.05);box-shadow:0 15px 40px rgba(212,175,55,.4)}
-    .about-text{flex:1;font-size:1.1rem;line-height:1.8}
+    .about-content{
+      display:flex;
+      align-items:center;
+      gap:40px;
+      margin-top:30px
+    }
+    .profile-photo{
+      width:200px;
+      height:200px;
+      border-radius:50%;
+      border:4px solid #d4af37;
+      box-shadow:0 10px 30px rgba(0,0,0,.3);
+      transition:.3s;
+      object-fit:cover;
+    }
+    .profile-photo:hover{
+      transform:scale(1.05);
+      box-shadow:0 15px 40px rgba(212,175,55,.4)
+    }
+    .about-text{
+      flex:1;
+      font-size:1.1rem;
+      line-height:1.8
+    }
 
     /* SKILLS */
-    .skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;margin-top:50px}
-    .skill-item{background:transparent;padding:30px;border-radius:0;text-align:center;transform:scale(.9);opacity:0;transition:.5s}
-    .skill-item.visible{transform:scale(1);opacity:1}
-    .skill-title{font-size:1.3rem;margin-bottom:10px;color:#d4af37}
+    .skills-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:30px;
+      margin-top:50px
+    }
+    .skill-item{
+      background:transparent;
+      padding:30px;
+      border-radius:0;
+      text-align:center;
+      transform:scale(.9);
+      opacity:0;
+      transition:.5s
+    }
+    .skill-item.visible{
+      transform:scale(1);
+      opacity:1
+    }
+    .skill-title{
+      font-size:1.3rem;
+      margin-bottom:10px;
+      color:#d4af37
+    }
 
     /* TIMELINE */
-    .timeline{position:relative;padding:50px 0}
-    .timeline::before{content:"";position:absolute;left:50%;top:0;bottom:0;width:2px;background:#d4af37;transform:translateX(-50%)}
-    .timeline-item{display:flex;justify-content:flex-end;padding:0 30px;position:relative;margin:50px 0;width:50%;opacity:0;transform:translateX(-50px);transition:.8s}
-    .timeline-item:nth-child(odd){justify-content:flex-start;left:50%;transform:translateX(50px)}
-    .timeline-item.visible{opacity:1;transform:translateX(0)}
-    .timeline-content{background:transparent;padding:30px;max-width:400px}
-    .timeline-date{color:#d4af37;font-weight:bold;margin-bottom:10px}
+    .timeline{
+      position:relative;
+      padding:50px 0
+    }
+    .timeline::before{
+      content:"";
+      position:absolute;
+      left:50%;
+      top:0;
+      bottom:0;
+      width:2px;
+      background:#d4af37;
+      transform:translateX(-50%)
+    }
+    .timeline-item{
+      display:flex;
+      justify-content:flex-end;
+      padding:0 30px;
+      position:relative;
+      margin:50px 0;
+      width:50%;
+      opacity:0;
+      transform:translateX(-50px);
+      transition:.8s
+    }
+    .timeline-item:nth-child(odd){
+      justify-content:flex-start;
+      left:50%;
+      transform:translateX(50px)
+    }
+    .timeline-item.visible{
+      opacity:1;
+      transform:translateX(0)
+    }
+    .timeline-content{
+      background:transparent;
+      padding:30px;
+      max-width:400px
+    }
+    .timeline-date{
+      color:#d4af37;
+      font-weight:bold;
+      margin-bottom:10px
+    }
 
-    /* GOLD SUBTITLES — SOLO in Highlights (#portfolio) */
+    /* HIGHLIGHTS */
     #portfolio .card-subtitle{
-      color:#d4af37;font-weight:600;margin:18px 0 8px;font-size:1.25rem;text-shadow:0 0 4px rgba(0,0,0,.5)
+      color:#d4af37;
+      font-weight:600;
+      margin:18px 0 8px;
+      font-size:1.25rem;
+      text-shadow:0 0 4px rgba(0,0,0,.5)
     }
 
     /* CONTACT */
-    .contact-section{background-image:url('background.webp');background-size:cover;background-repeat:no-repeat;background-position:center;background-attachment:fixed;
-      filter:brightness(.7) contrast(1.3) saturate(1.2) sepia(.1) hue-rotate(-5deg);image-rendering:-webkit-optimize-contrast;image-rendering:crisp-edges;color:#fff;
-      padding:100px 20px;position:relative;overflow:hidden}
-    .contact-section::before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,0,0,.4),rgba(212,175,55,.1));mix-blend-mode:overlay;opacity:.6;z-index:1}
-    .contact-container{max-width:1200px;margin:0 auto;position:relative;z-index:2}
-    .contact-container::before{content:"";position:absolute;top:-30px;left:-30px;right:-30px;bottom:-30px;background:radial-gradient(ellipse at center,rgba(0,0,0,.4),rgba(0,0,0,.3) 40%,rgba(0,0,0,.2) 70%,transparent 100%);z-index:-1;border-radius:20px}
-    .contact-title{font-size:3rem;text-align:center;margin-bottom:20px;color:#d4af37;font-weight:bold;text-shadow:2px 2px 4px rgba(0,0,0,.8),4px 4px 8px rgba(0,0,0,.6),0 0 20px rgba(0,0,0,.4)}
-    .contact-subtitle{font-size:1.3rem;text-align:center;margin-bottom:60px;opacity:.9;max-width:600px;margin-inline:auto;text-shadow:1px 1px 3px rgba(0,0,0,.8),2px 2px 6px rgba(0,0,0,.5)}
-    .contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:50px;margin-bottom:60px}
-    .contact-card{background:rgba(255,255,255,.05);padding:40px;border-radius:20px;text-align:center;backdrop-filter:blur(10px);
-      border:1px solid rgba(255,255,255,.1);transition:.3s;transform:translateY(20px);opacity:0}
-    .contact-card.visible{transform:translateY(0);opacity:1}
-    .contact-card:hover{transform:translateY(-10px);background:rgba(212,175,55,.1);border-color:rgba(212,175,55,.3)}
-    .contact-icon{width:60px;height:60px;margin:0 auto 20px;fill:#d4af37;transition:.3s}
-    .contact-card:hover .contact-icon{fill:#e6c55a;transform:scale(1.1)}
-    .contact-method{font-size:1.4rem;margin-bottom:10px;color:#d4af37;font-weight:bold;text-shadow:1px 1px 3px rgba(0,0,0,.8),2px 2px 6px rgba(0,0,0,.5)}
-    .contact-details{font-size:1.1rem;opacity:.9;line-height:1.6;text-shadow:1px 1px 2px rgba(0,0,0,.8),2px 2px 4px rgba(0,0,0,.4)}
-    .contact-details a{color:#fff;text-decoration:none}
+    .contact-section{
+      background-image:url('background.webp');
+      background-size:cover;
+      background-repeat:no-repeat;
+      background-position:center;
+      background-attachment:fixed;
+      filter:brightness(.7) contrast(1.3) saturate(1.2) sepia(.1) hue-rotate(-5deg);
+      image-rendering:-webkit-optimize-contrast;
+      image-rendering:crisp-edges;
+      color:#fff;
+      padding:100px 20px;
+      position:relative;
+      overflow:hidden
+    }
+    .contact-section::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:linear-gradient(135deg,rgba(0,0,0,.4),rgba(212,175,55,.1));
+      mix-blend-mode:overlay;
+      opacity:.6;
+      z-index:1
+    }
+    .contact-container{
+      max-width:1200px;
+      margin:0 auto;
+      position:relative;
+      z-index:2
+    }
+    .contact-container::before{
+      content:"";
+      position:absolute;
+      top:-30px;
+      left:-30px;
+      right:-30px;
+      bottom:-30px;
+      background:radial-gradient(ellipse at center,rgba(0,0,0,.4),rgba(0,0,0,.3) 40%,rgba(0,0,0,.2) 70%,transparent 100%);
+      z-index:-1;
+      border-radius:20px
+    }
+    .contact-title{
+      font-size:3rem;
+      text-align:center;
+      margin-bottom:20px;
+      color:#d4af37;
+      font-weight:bold;
+      text-shadow:2px 2px 4px rgba(0,0,0,.8),4px 4px 8px rgba(0,0,0,.6),0 0 20px rgba(0,0,0,.4)
+    }
+    .contact-subtitle{
+      font-size:1.3rem;
+      text-align:center;
+      margin-bottom:60px;
+      opacity:.9;
+      max-width:700px;
+      margin-inline:auto;
+      text-shadow:1px 1px 3px rgba(0,0,0,.8),2px 2px 6px rgba(0,0,0,.5)
+    }
+    .contact-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:50px;
+      margin-bottom:60px
+    }
+    .contact-card{
+      background:rgba(255,255,255,.05);
+      padding:40px;
+      border-radius:20px;
+      text-align:center;
+      backdrop-filter:blur(10px);
+      border:1px solid rgba(255,255,255,.1);
+      transition:.3s;
+      transform:translateY(20px);
+      opacity:0
+    }
+    .contact-card.visible{
+      transform:translateY(0);
+      opacity:1
+    }
+    .contact-card:hover{
+      transform:translateY(-10px);
+      background:rgba(212,175,55,.1);
+      border-color:rgba(212,175,55,.3)
+    }
+    .contact-icon{
+      width:60px;
+      height:60px;
+      margin:0 auto 20px;
+      fill:#d4af37;
+      transition:.3s
+    }
+    .contact-card:hover .contact-icon{
+      fill:#e6c55a;
+      transform:scale(1.1)
+    }
+    .contact-method{
+      font-size:1.4rem;
+      margin-bottom:10px;
+      color:#d4af37;
+      font-weight:bold;
+      text-shadow:1px 1px 3px rgba(0,0,0,.8),2px 2px 6px rgba(0,0,0,.5)
+    }
+    .contact-details{
+      font-size:1.1rem;
+      opacity:.9;
+      line-height:1.6;
+      text-shadow:1px 1px 2px rgba(0,0,0,.8),2px 2px 4px rgba(0,0,0,.4)
+    }
+    .contact-details a{
+      color:#fff;
+      text-decoration:none
+    }
     .contact-details a:hover{color:#d4af37}
 
     /* SOCIAL */
-    .social-section{text-align:center;padding-top:40px;border-top:1px solid rgba(255,255,255,.1)}
-    .social-title{font-size:1.8rem;margin-bottom:30px;color:#d4af37;text-shadow:1px 1px 3px rgba(0,0,0,.8),2px 2px 6px rgba(0,0,0,.5)}
-    .social-links{display:flex;justify-content:center;gap:30px;flex-wrap:wrap}
-    .social-link{display:flex;align-items:center;justify-content:center;width:60px;height:60px;background:rgba(255,255,255,.05);border-radius:50%;transition:.3s;text-decoration:none;border:2px solid rgba(255,255,255,.1)}
-    .social-link:hover{background:#d4af37;border-color:#d4af37;transform:translateY(-5px) scale(1.1);box-shadow:0 10px 30px rgba(212,175,55,.3)}
-    .social-icon{width:28px;height:28px;fill:#fff;transition:.3s}
+    .social-section{
+      text-align:center;
+      padding-top:40px;
+      border-top:1px solid rgba(255,255,255,.1)
+    }
+    .social-title{
+      font-size:1.8rem;
+      margin-bottom:30px;
+      color:#d4af37;
+      text-shadow:1px 1px 3px rgba(0,0,0,.8),2px 2px 6px rgba(0,0,0,.5)
+    }
+    .social-links{
+      display:flex;
+      justify-content:center;
+      gap:30px;
+      flex-wrap:wrap
+    }
+    .social-link{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      width:60px;
+      height:60px;
+      background:rgba(255,255,255,.05);
+      border-radius:50%;
+      transition:.3s;
+      text-decoration:none;
+      border:2px solid rgba(255,255,255,.1)
+    }
+    .social-link:hover{
+      background:#d4af37;
+      border-color:#d4af37;
+      transform:translateY(-5px) scale(1.1);
+      box-shadow:0 10px 30px rgba(212,175,55,.3)
+    }
+    .social-icon{
+      width:28px;
+      height:28px;
+      fill:#fff;
+      transition:.3s
+    }
 
     /* PAGE-UP */
-    .page-up-btn{position:fixed;right:20px;bottom:30px;width:50px;height:50px;background:linear-gradient(135deg,#d4af37,#b8941f);border:none;border-radius:50%;
-      cursor:pointer;opacity:0;visibility:hidden;transition:.3s;z-index:1000;box-shadow:0 4px 15px rgba(212,175,55,.3);display:flex;align-items:center;justify-content:center}
-    .page-up-btn.show{opacity:1;visibility:visible}
-    .page-up-btn svg{width:24px;height:24px;fill:#fff}
+    .page-up-btn{
+      position:fixed;
+      right:20px;
+      bottom:30px;
+      width:50px;
+      height:50px;
+      background:linear-gradient(135deg,#d4af37,#b8941f);
+      border:none;
+      border-radius:50%;
+      cursor:pointer;
+      opacity:0;
+      visibility:hidden;
+      transition:.3s;
+      z-index:1000;
+      box-shadow:0 4px 15px rgba(212,175,55,.3);
+      display:flex;
+      align-items:center;
+      justify-content:center
+    }
+    .page-up-btn.show{
+      opacity:1;
+      visibility:visible
+    }
+    .page-up-btn svg{
+      width:24px;
+      height:24px;
+      fill:#fff
+    }
 
-    footer{background:rgba(0,0,0,.8);color:#fff;text-align:center;padding:30px 20px;font-size:.9rem;opacity:.7}
+    footer{
+      background:rgba(0,0,0,.8);
+      color:#fff;
+      text-align:center;
+      padding:30px 20px;
+      font-size:.9rem;
+      opacity:.7
+    }
 
     /* RESPONSIVE NAV */
     @media (max-width:820px){
       .topnav .nav-toggle{display:block}
-      .topnav .nav-links{position:fixed;right:10px;top:60px;background:rgba(0,0,0,.9);padding:12px;border-radius:12px;flex-direction:column;gap:10px;display:none;border:1px solid rgba(212,175,55,.15)}
+      .topnav .nav-links{
+        position:fixed;
+        right:10px;
+        top:60px;
+        background:rgba(0,0,0,.9);
+        padding:12px;
+        border-radius:12px;
+        flex-direction:column;
+        gap:10px;
+        display:none;
+        border:1px solid rgba(212,175,55,.15)
+      }
       .topnav .nav-links.open{display:flex}
     }
 
-    /* RESPONSIVE blocchi principali (come tuoi) */
+    /* RESPONSIVE blocchi principali */
     @media (max-width:768px){
       .hero-section{padding:60px 20px;min-height:70vh}
       .hero-title{font-size:2.2rem}
-      .about-content{flex-direction:column;text-align:center;gap:30px}
+      .about-content{
+        flex-direction:column;
+        text-align:center;
+        gap:30px
+      }
       .profile-photo{width:150px;height:150px}
-      .timeline::before{left:30px;width:3px}
-      .timeline-item{width:100%;padding-left:60px;padding-right:20px;margin:30px 0;transform:none !important}
-      .timeline-item:nth-child(odd){left:0;transform:none !important}
+      .timeline::before{
+        left:30px;
+        width:3px
+      }
+      .timeline-item{
+        width:100%;
+        padding-left:60px;
+        padding-right:20px;
+        margin:30px 0;
+        transform:none !important
+      }
+      .timeline-item:nth-child(odd){
+        left:0;
+        transform:none !important
+      }
     }
 
-    @keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes fadeInUp{
+      from{opacity:0;transform:translateY(30px)}
+      to{opacity:1;transform:translateY(0)}
+    }
   </style>
 </head>
 <body>
 
   <!-- NAVBAR -->
- <nav class="topnav" role="navigation" aria-label="Primary">
-  <a class="brand" href="#top" aria-label="Homepage">
-    <span class="brand-icon">
-      <img src="assets/plc-logo.svg" alt="PLC logo" class="brand-mark">
-    </span>
-    <span class="brand-text"></span>
-  </a>
+  <nav class="topnav" role="navigation" aria-label="Primary">
+    <a class="brand" href="#top" aria-label="Homepage">
+      <span class="brand-icon">
+        <img src="assets/plc-logo.svg" alt="PLC logo" class="brand-mark">
+      </span>
+      <span class="brand-text">PLC</span>
+    </a>
 
-  <button class="nav-toggle" aria-label="Toggle navigation">≡</button>
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills-title">Skills</a></li>
-    <li><a href="#portfolio-title">Highlights</a></li>
-    <li><a href="#journey">Journey</a></li>
-    <li><a href="#contact-title">Contact</a></li>
-    <li><a class="btn-download" href="assets/Pier-Luigi-Cherchi-CV.pdf" target="_blank" rel="noopener">Download CV</a></li>
-  </ul>
-</nav>
+    <button class="nav-toggle" aria-label="Toggle navigation">≡</button>
+    <ul class="nav-links">
+      <li><a href="#about" data-i18n="nav.about">About</a></li>
+      <li><a href="#skills-title" data-i18n="nav.skills">Skills</a></li>
+      <li><a href="#portfolio-title" data-i18n="nav.highlights">Highlights</a></li>
+      <li><a href="#journey" data-i18n="nav.journey">Journey</a></li>
+      <li><a href="#contact-title" data-i18n="nav.contact">Contact</a></li>
+      <li>
+        <a class="btn-download" href="assets/Pier-Luigi-Cherchi-CV.pdf" target="_blank" rel="noopener" data-i18n="nav.cv">
+          Download CV
+        </a>
+      </li>
+      <li class="lang-switch">
+        <button type="button" id="lang-en" class="active">EN</button>
+        <span class="sep">|</span>
+        <button type="button" id="lang-it">IT</button>
+      </li>
+    </ul>
+  </nav>
 
   <!-- Page Up Button -->
-  <button class="page-up-btn" id="pageUpBtn" aria-label="Torna in cima">
+  <button class="page-up-btn" id="pageUpBtn" aria-label="Back to top">
     <svg viewBox="0 0 24 24"><path d="M21 16v-2l-8-5V5.5c0-.83-.67-1.5-1.5-1.5S10 4.67 10 5.5V9l-8 5v2l8-2.5V17.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5V13.5l8 2.5z"/></svg>
   </button>
 
   <!-- HERO -->
   <header class="hero-section">
     <div class="hero-content">
-      <h1 class="hero-title">Pier Luigi <span style="color:#d4af37">Cherchi</span></h1>
-      <h2 class="hero-subtitle">Aviation, IT & Psychology</h2>
-      <p class="hero-description">I see my work as a bridge between systems and people.</p>
-      <a href="#about" class="cta-button">Cleared to takeoff</a>
+      <h1 class="hero-title" data-i18n="hero.title">
+        Pier Luigi <span style="color:#d4af37">Cherchi</span>
+      </h1>
+      <h2 class="hero-subtitle" data-i18n="hero.subtitle">Aviation Systems, Human Factors & Applied Psychology</h2>
+      <p class="hero-description" data-i18n="hero.description">
+        I optimise complex flight operations by aligning technology, procedures and people.
+      </p>
+      <a href="#about" class="cta-button" data-i18n="hero.cta">Cleared to takeoff</a>
     </div>
   </header>
 
@@ -249,19 +690,23 @@
     <!-- ABOUT -->
     <section id="about" class="content-section section-dark" aria-labelledby="about-title">
       <div class="info-card about-card" data-animate="true">
-        <h2 class="card-title" id="about-title">About me</h2>
+        <h2 class="card-title" id="about-title" data-i18n="about.title">About me</h2>
         <div class="about-content">
           <div class="profile-photo-container">
-            <img src="Foto.jpg" alt="Pier Luigi Cherchi - Flight Dispatcher" class="profile-photo" loading="lazy">
+            <img src="Foto.jpg" alt="Pier Luigi Cherchi - Flight Operations & Human Factors" class="profile-photo" loading="lazy">
           </div>
           <div class="about-text">
-            <p>Professional with a strong background in aviation systems and team leadership, combining technical accuracy with human insight.
-            Over the years I have coordinated mission-planning and debriefing operations within complex environments, ensuring consistency between aircraft and simulator data while guiding small, high-performing teams under pressure.</p>
+            <p data-i18n="about.p1">
+              Aviation professional with a strong background in flight operations, mission systems and team leadership. I have coordinated mission-planning and debriefing activities in complex training environments, keeping aircraft and simulator data aligned while supporting small, high-performing teams under pressure.
+            </p>
             <br>
-            <p>I integrate a solid understanding of flight data, operational workflows, and digital tools with a growing expertise in psychology and human performance.
-            My approach blends structure and empathy, focusing on clarity, collaboration, and responsibility in every task.</p>
+            <p data-i18n="about.p2">
+              I combine hands-on experience with flight data, operational workflows and digital tools with formal training in psychology and human performance. My focus is to turn complexity into clarity, so that crews, instructors and support teams can take better decisions with the right information at the right time.
+            </p>
             <br>
-            <p>Professionalism is more than skill: it is awareness, integrity, and the ability to stay human in structured systems. My goal is to keep merging technical expertise and psychology to help people and processes work in harmony.</p>
+            <p data-i18n="about.p3">
+              For me, professionalism means competence, awareness and responsibility. I look for roles where I can keep bridging technology and people: improving safety, communication and reliability in everyday operations, not just in PowerPoint.
+            </p>
           </div>
         </div>
       </div>
@@ -270,119 +715,138 @@
     <!-- SKILLS -->
     <section class="content-section section-light" aria-labelledby="skills-title">
       <div class="info-card" data-animate="true">
-        <h2 class="card-title" id="skills-title">My Core Skills</h2>
+        <h2 class="card-title" id="skills-title" data-i18n="skills.title">Core strengths</h2>
         <div class="skills-grid">
           <div class="skill-item" data-animate="true">
-            <h3 class="skill-title">Flight Dispatching</h3>
-            <p>Full-stack planning and coordination</p>
+            <h3 class="skill-title" data-i18n="skills.dispatch.title">Mission & Dispatch Operations</h3>
+            <p data-i18n="skills.dispatch.text">End-to-end planning, release and monitoring in high-complexity scenarios</p>
           </div>
           <div class="skill-item" data-animate="true">
-            <h3 class="skill-title">Team Applied Psychology</h3>
-            <p>Stress management, conflict resolution, team leadership</p>
+            <h3 class="skill-title" data-i18n="skills.psych.title">Human Factors & Team Psychology</h3>
+            <p data-i18n="skills.psych.text">Stress, workload and behaviour in crews and technical teams</p>
           </div>
           <div class="skill-item" data-animate="true">
-            <h3 class="skill-title">Communication</h3>
-            <p>Coordination among pilots, ATC and Ground Operations</p>
+            <h3 class="skill-title" data-i18n="skills.comm.title">High-stakes Communication</h3>
+            <p data-i18n="skills.comm.text">Clear, concise coordination between pilots, ATC and ground stakeholders</p>
           </div>
           <div class="skill-item" data-animate="true">
-            <h3 class="skill-title">Crisis Management</h3>
-            <p>ERP and critical decision making</p>
+            <h3 class="skill-title" data-i18n="skills.crisis.title">Crisis & Abnormal Management</h3>
+            <p data-i18n="skills.crisis.text">ERP mindset, time-critical decisions and escalation control</p>
           </div>
           <div class="skill-item" data-animate="true">
-            <h3 class="skill-title">Data Analysis</h3>
-            <p>Meteo, NOTAM and performance analysis</p>
+            <h3 class="skill-title" data-i18n="skills.data.title">Data, Performance & Meteo</h3>
+            <p data-i18n="skills.data.text">From METAR/TAF and NOTAM to performance margins and route choices</p>
           </div>
           <div class="skill-item" data-animate="true">
-            <h3 class="skill-title">IT and Systems</h3>
-            <p>Database and software/hardware integration</p>
+            <h3 class="skill-title" data-i18n="skills.it.title">IT, Systems & Integration</h3>
+            <p data-i18n="skills.it.text">Server, SQL and cockpit/simulator data flows in mission-critical environments</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- HIGHLIGHTS (gold subtitles only here) -->
+    <!-- HIGHLIGHTS -->
     <section id="portfolio" class="content-section section-light" aria-labelledby="portfolio-title">
       <div class="info-card" data-animate="true">
-        <h2 class="card-title" id="portfolio-title">Achievements & Experience Highlights</h2>
+        <h2 class="card-title" id="portfolio-title" data-i18n="portfolio.title">Selected impact & experience highlights</h2>
 
         <div class="card-content prose">
-          <h3 class="card-subtitle">Integration and Human–Technical Synergy</h3>
-          <p>Within Mission Planning & Debriefing (MPDS) I aligned procedures, people and data, acting as the bridge
-          among technical departments, pilots and management. Clear handovers, aircraft–simulator data consistency, and
-          disciplined execution with a human-centred mindset for resource allocation, communication under pressure and decision quality.</p>
+          <h3 class="card-subtitle" data-i18n="portfolio.h1.title">Mission systems integration & human-technical bridge</h3>
+          <p data-i18n="portfolio.h1.text">
+            Within Mission Planning & Debriefing (MPDS) I aligned procedures, people and data, acting as the bridge
+            among technical departments, pilots and management. Clear handovers, aircraft–simulator data consistency and
+            disciplined execution with a human-centred mindset, improving trust in data and reducing friction between teams.
+          </p>
 
-          <h3 class="card-subtitle">RTMS Operations and Cross-Functional Leadership</h3>
-          <p>Reference operator for the Real-Time Monitoring System (radar-like environment): acceptance tests and live operations,
-          shoulder-to-shoulder with instructors and pilots. Translated complex system behaviour into actionable brief/debrief
-          material, coordinating with stakeholders for smooth mission outcomes.</p>
+          <h3 class="card-subtitle" data-i18n="portfolio.h2.title">RTMS & real-time mission support</h3>
+          <p data-i18n="portfolio.h2.text">
+            Reference operator for the Real-Time Monitoring System (radar-like environment): acceptance tests and live operations,
+            shoulder-to-shoulder with instructors and pilots. I turned complex system behaviour into brief/debrief material that
+            crews could actually use, closing the loop between simulation, cockpit reality and training objectives.
+          </p>
 
-          <h3 class="card-subtitle">Global Ops Coverage</h3>
-          <p>Airline, business and state/defence aviation, as employee and independent contractor. Planned and released
-          operations worldwide including ETOPS, oceanic and remote airports, ensuring legal, meteorological and performance
-          compliance for multiple airframes and mission types.</p>
+          <h3 class="card-subtitle" data-i18n="portfolio.h3.title">Global flight operations coverage</h3>
+          <p data-i18n="portfolio.h3.text">
+            Airline, business and state/defence aviation, as employee and independent contractor. Planned and released
+            operations worldwide including ETOPS, oceanic and remote airports, ensuring legal, meteorological and performance
+            compliance for multiple airframes and mission profiles, from scheduled flights to special missions.
+          </p>
 
-          <h3 class="card-subtitle">Diplomatic, Medevac, VVIP & ACMI/EACMI</h3>
-          <p>Experience with medevac, VVIP movements (incl. Heads of State) and ACMI/EACMI. Rapid base set-up, short-notice
-          rostering, and diplomatic coordination. Focus on slots/perms, robust alternates and cost-aware route optimisation.</p>
+          <h3 class="card-subtitle" data-i18n="portfolio.h4.title">Diplomatic, medevac, VVIP & ACMI/EACMI</h3>
+          <p data-i18n="portfolio.h4.text">
+            Experience with medevac, VVIP movements (incl. Heads of State) and ACMI/EACMI. Rapid base set-up, short-notice
+            rostering and diplomatic coordination. Focus on slots/permits, robust alternates and route choices that balance
+            safety margins, medical urgency, cost and passenger experience.
+          </p>
 
-          <h3 class="card-subtitle">EFB & Digital Cockpit</h3>
-          <p>End-to-end cockpit data coordination: flight folder build, briefing package, document control, app currency,
-          performance exports and distribution. Continuous crew feedback loop to keep cockpit data clear, consistent and current.</p>
+          <h3 class="card-subtitle" data-i18n="portfolio.h5.title">EFB, digital cockpit & crew experience</h3>
+          <p data-i18n="portfolio.h5.text">
+            End-to-end cockpit data coordination: flight folder build, briefing package, document control, app currency,
+            performance exports and distribution. Continuous feedback from crews to keep cockpit information clear, consistent
+            and easy to read in real-world conditions, not just on paper.
+          </p>
 
-          <h3 class="card-subtitle">Core Dispatch Competencies</h3>
-          <p>Meteorology (SIGWX, TAF/METAR trends, WAFS), NOTAM criticality assessment, AIRAC cycle validation,
-          performance policy tuning, contingency/redispatch, drift/obstacle/limited scenarios, re-clear/redispatch logic
-          when it benefits payload, time and engine-on-wing.</p>
+          <h3 class="card-subtitle" data-i18n="portfolio.h6.title">Dispatch & analytical core</h3>
+          <p data-i18n="portfolio.h6.text">
+            Meteorology (SIGWX, TAF/METAR trends, WAFS), NOTAM criticality assessment, AIRAC cycle validation,
+            performance policy tuning, contingency/redispatch and limited-scenario planning. Redispatch/re-clear logic
+            when it genuinely benefits payload, time and engine-on-wing, not as a checkbox exercise.
+          </p>
 
-          <h3 class="card-subtitle">Performance & Tools</h3>
-          <p>Aircraft performance profile build, testing and maintenance for planning platforms such as PPS (AIR SUPPORT)
-          and local route-check tools. Local server supervision for data integrity/high availability and reliable exports to
-          EFB and debrief environments.</p>
+          <h3 class="card-subtitle" data-i18n="portfolio.h7.title">Performance tools & data integrity</h3>
+          <p data-i18n="portfolio.h7.text">
+            Aircraft performance profile build, testing and maintenance for planning platforms such as PPS (AIR SUPPORT)
+            and local route-check tools. Local server supervision to keep data integrity and availability high, ensuring
+            reliable exports towards EFB, simulators and debrief environments.
+          </p>
 
-          <h3 class="card-subtitle">Stakeholder Coordination</h3>
-          <p>Daily liaison with ATC, handlers, CAM/part-145, medical providers and ground ops. Clear, time-bound comms
-          balancing passenger care, medical urgency, safety margins and commercial constraints—keeping crews confident and decision-ready.</p>
+          <h3 class="card-subtitle" data-i18n="portfolio.h8.title">Stakeholder coordination & human factor</h3>
+          <p data-i18n="portfolio.h8.text">
+            Daily liaison with ATC, handlers, CAM/part-145, medical providers and ground ops. Time-bound communication,
+            balancing passenger care, medical or training priorities, safety margins and commercial constraints—helping
+            crews stay confident and mentally free to focus on flying.
+          </p>
         </div>
       </div>
     </section>
 
     <!-- JOURNEY -->
     <section class="content-section section-dark">
-      <h2 class="card-title" id="journey" style="text-align:center;margin-bottom:50px;">My Professional Journey</h2>
+      <h2 class="card-title" id="journey" style="text-align:center;margin-bottom:50px;" data-i18n="journey.title">Professional journey</h2>
       <div class="timeline">
         <div class="timeline-item" data-animate="true">
           <div class="timeline-content">
-            <div class="timeline-date">2019</div>
-            <h3>Flight Dispatcher</h3>
-            <p>Various Airlines (Malta, Lithuania, France)</p>
+            <div class="timeline-date" data-i18n="journey.2019a.date">2019</div>
+            <h3 data-i18n="journey.2019a.title">Flight Dispatcher</h3>
+            <p data-i18n="journey.2019a.text">Various airlines (Malta, Lithuania, France)</p>
           </div>
         </div>
         <div class="timeline-item" data-animate="true">
           <div class="timeline-content">
-            <div class="timeline-date">2019</div>
-            <h3>EASA Flight Dispatcher Licence</h3>
-            <p>EASA/ICAO and TEA ICAO 4</p>
+            <div class="timeline-date" data-i18n="journey.2019b.date">2019</div>
+            <h3 data-i18n="journey.2019b.title">EASA Flight Dispatcher Licence</h3>
+            <p data-i18n="journey.2019b.text">EASA/ICAO licence and TEA ICAO Level 4</p>
           </div>
         </div>
         <div class="timeline-item" data-animate="true">
           <div class="timeline-content">
-            <div class="timeline-date">2020</div>
-            <h3>Senior Flight Dispatcher</h3>
-            <p>Self-Employed (Malta, Italy)</p>
+            <div class="timeline-date" data-i18n="journey.2020.date">2020</div>
+            <h3 data-i18n="journey.2020.title">Senior Flight Dispatcher</h3>
+            <p data-i18n="journey.2020.text">Independent contractor (Malta, Italy)</p>
           </div>
         </div>
         <div class="timeline-item" data-animate="true">
           <div class="timeline-content">
-            <div class="timeline-date">2023</div>
-            <h3>Team Leader Leonardo/CAE</h3>
-            <p>Mission Planning and Debriefing System Coordinator</p>
+            <div class="timeline-date" data-i18n="journey.2023.date">2023</div>
+            <h3 data-i18n="journey.2023.title">Mission Systems Team Leader</h3>
+            <p data-i18n="journey.2023.text">MPDS Coordinator – Leonardo / CAE / Italian Air Force IFTS</p>
           </div>
         </div>
         <div class="timeline-item" data-animate="true">
           <div class="timeline-content">
-            <div class="timeline-date">2025</div>
-            <h3>Psychology Degree</h3>
-            <p>Applied Psychology – L24</p>
+            <div class="timeline-date" data-i18n="journey.2025.date">2025</div>
+            <h3 data-i18n="journey.2025.title">BSc in Applied Psychology</h3>
+            <p data-i18n="journey.2025.text">Bachelor in Applied Psychology (L-24)</p>
           </div>
         </div>
       </div>
@@ -391,12 +855,24 @@
     <!-- SERVICES -->
     <section class="content-section section-light">
       <div class="info-card" data-animate="true">
-        <h2 class="card-title">My Services</h2>
+        <h2 class="card-title" data-i18n="services.title">How I can help</h2>
         <div class="card-content">
-          <p><strong>Aviation Dispatching:</strong> Full-stack planning and coordination</p><br>
-          <p><strong>Human Factors consulting:</strong> Team dynamics, stress management, effective communication</p><br>
-          <p><strong>Training:</strong> Junior dispatcher training and CRM (Crew Resource Management) courses</p><br>
-          <p><strong>Emergency Response Planning:</strong> Protocols integrating psychological principles to optimise performance under pressure</p>
+          <p>
+            <strong data-i18n="services.dispatch.label">Flight operations & dispatch support:</strong>
+            <span data-i18n="services.dispatch.text">planning, release and monitoring with a practical, safety-driven mindset</span>
+          </p><br>
+          <p>
+            <strong data-i18n="services.hf.label">Human Factors & safety culture:</strong>
+            <span data-i18n="services.hf.text">from communication habits to stress and workload management in operations</span>
+          </p><br>
+          <p>
+            <strong data-i18n="services.training.label">Training & coaching:</strong>
+            <span data-i18n="services.training.text">junior dispatcher development, CRM-oriented briefings and system-use coaching</span>
+          </p><br>
+          <p>
+            <strong data-i18n="services.erp.label">Procedures & emergency readiness:</strong>
+            <span data-i18n="services.erp.text">support in aligning SOPs, ERP and real human behaviour during abnormal situations</span>
+          </p>
         </div>
       </div>
     </section>
@@ -404,35 +880,41 @@
     <!-- CONTACT -->
     <section class="contact-section" aria-labelledby="contact-title">
       <div class="contact-container">
-        <h2 class="contact-title" id="contact-title">Contact me</h2>
-        <p class="contact-subtitle">I’m open to new opportunities, collaborations and specialised consulting within the aviation sector.</p>
+        <h2 class="contact-title" id="contact-title" data-i18n="contact.title">Let’s talk</h2>
+        <p class="contact-subtitle" data-i18n="contact.subtitle">
+          I’m open to roles in airlines, training organisations and defence/mission-based aviation, as well as consulting projects where flight operations, systems and human factors need to work together.
+        </p>
 
         <div class="contact-grid">
           <div class="contact-card" data-animate="true">
             <svg class="contact-icon" viewBox="0 0 24 24" aria-label="Email"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-            <h3 class="contact-method">Email</h3>
+            <h3 class="contact-method" data-i18n="contact.email.title">Email</h3>
             <div class="contact-details">
-              <a href="mailto:cherchi.p@yahoo.com">cherchi.p@yahoo.com</a><br/>Response within 24 hours
+              <a href="mailto:cherchi.p@yahoo.com">cherchi.p@yahoo.com</a><br/>
+              <span data-i18n="contact.email.text">Usually replying within 24 hours</span>
             </div>
           </div>
 
           <div class="contact-card" data-animate="true">
-            <svg class="contact-icon" viewBox="0 0 24 24" aria-label="Telefono"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-            <h3 class="contact-method">Phone</h3>
+            <svg class="contact-icon" viewBox="0 0 24 24" aria-label="Phone"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            <h3 class="contact-method" data-i18n="contact.phone.title">Phone</h3>
             <div class="contact-details">
-              <a href="tel:+393806468956">+39 380 646 8956</a><br/>Mon–Fri: 09:00–18:00 CET
+              <a href="tel:+393806468956">+39 380 646 8956</a><br/>
+              <span data-i18n="contact.phone.text">Mon–Fri · 09:00–18:00 CET</span>
             </div>
           </div>
 
           <div class="contact-card" data-animate="true">
             <svg class="contact-icon" viewBox="0 0 24 24" aria-label="Location"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-            <h3 class="contact-method">Location</h3>
-            <div class="contact-details">Italy / Europe<br/>Available to travel and relocate</div>
+            <h3 class="contact-method" data-i18n="contact.location.title">Location</h3>
+            <div class="contact-details">
+              <span data-i18n="contact.location.text">Based in Italy · Available across Europe and beyond</span>
+            </div>
           </div>
         </div>
 
         <div class="social-section">
-          <h3 class="social-title">Let's connect!</h3>
+          <h3 class="social-title" data-i18n="social.title">Let’s connect on LinkedIn</h3>
           <div class="social-links">
             <a href="https://www.linkedin.com/in/pier-luigi-cherchi-7a459716b/" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn: Pier Luigi Cherchi">
               <svg class="social-icon" viewBox="0 0 24 24" role="img"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
@@ -443,63 +925,306 @@
     </section>
   </main>
 
-  <footer><p>&copy; 2025 Pier Luigi Cherchi — Flight Operations & Human Factors. All rights reserved.</p></footer>
+  <footer>
+    <p data-i18n="footer.text">© 2025 Pier Luigi Cherchi — Flight Operations, Mission Systems & Human Factors.</p>
+  </footer>
 
-  <!-- JS: animazioni, toggle nav, page-up -->
+  <!-- JS -->
   <script>
     // Toggle mobile nav
-    const toggle=document.querySelector('.nav-toggle');
-    const links=document.querySelector('.nav-links');
-    if(toggle&&links){toggle.addEventListener('click',()=>links.classList.toggle('open'));}
-
-    // Scroll indicator + reveal on scroll (tuo schema)
-    const scrollIndicator=document.getElementById('scrollIndicator');
-    let targetScroll=window.pageYOffset||document.documentElement.scrollTop;
-    let currentScroll=targetScroll;let rafRunning=false;
-    function applyScrollEffects(){
-      const diff=targetScroll-currentScroll;const easing=.12;currentScroll+=diff*easing;
-      const op=Math.max(0,1-(currentScroll/150));scrollIndicator&&(scrollIndicator.style.opacity=op,scrollIndicator.style.pointerEvents=(op>0.1?'auto':'none'));
-      if(Math.abs(diff)>0.3){requestAnimationFrame(applyScrollEffects)}else{rafRunning=false}
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.querySelector('.nav-links');
+    if (toggle && links) {
+      toggle.addEventListener('click', () => links.classList.toggle('open'));
     }
-    function onScroll(){targetScroll=window.pageYOffset||document.documentElement.scrollTop;if(!rafRunning){rafRunning=true;requestAnimationFrame(applyScrollEffects)}}
-    const reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)');
-    if(!reduceMotion.matches){window.addEventListener('scroll',onScroll,{passive:true});}
 
-    // Intersection Observer
-    const observer=new IntersectionObserver((entries)=>{
-      entries.forEach(entry=>{
-        if(entry.isIntersecting){
+    // Scroll indicator + smooth opacity
+    const scrollIndicator = document.getElementById('scrollIndicator');
+    let targetScroll = window.pageYOffset || document.documentElement.scrollTop;
+    let currentScroll = targetScroll;
+    let rafRunning = false;
+
+    function applyScrollEffects() {
+      const diff = targetScroll - currentScroll;
+      const easing = .12;
+      currentScroll += diff * easing;
+      const op = Math.max(0, 1 - (currentScroll / 150));
+      if (scrollIndicator) {
+        scrollIndicator.style.opacity = op;
+        scrollIndicator.style.pointerEvents = (op > 0.1 ? 'auto' : 'none');
+      }
+      if (Math.abs(diff) > 0.3) {
+        requestAnimationFrame(applyScrollEffects);
+      } else {
+        rafRunning = false;
+      }
+    }
+
+    function onScroll() {
+      targetScroll = window.pageYOffset || document.documentElement.scrollTop;
+      if (!rafRunning) {
+        rafRunning = true;
+        requestAnimationFrame(applyScrollEffects);
+      }
+    }
+
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    if (!reduceMotion.matches) {
+      window.addEventListener('scroll', onScroll, { passive: true });
+    }
+
+    // Intersection Observer for animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
           entry.target.classList.add('visible');
-          if(entry.target.classList.contains('skill-item')){
-            const items=document.querySelectorAll('.skill-item');
-            items.forEach((it,i)=>setTimeout(()=>it.classList.add('visible'),i*100));
+
+          if (entry.target.classList.contains('skill-item')) {
+            const items = document.querySelectorAll('.skill-item');
+            items.forEach((it, i) => setTimeout(() => it.classList.add('visible'), i * 100));
           }
-          if(entry.target.classList.contains('contact-card')){
-            const cards=document.querySelectorAll('.contact-card');
-            cards.forEach((c,i)=>setTimeout(()=>c.classList.add('visible'),i*150));
+
+          if (entry.target.classList.contains('contact-card')) {
+            const cards = document.querySelectorAll('.contact-card');
+            cards.forEach((c, i) => setTimeout(() => c.classList.add('visible'), i * 150));
           }
         }
       });
-    },{threshold:.1,rootMargin:'0px 0px -50px 0px'});
-    document.querySelectorAll('[data-animate="true"], .contact-card, .social-links').forEach(el=>observer.observe(el));
+    }, { threshold: .1, rootMargin: '0px 0px -50px 0px' });
 
-    // Typing hero title
-    const heroTitle=document.querySelector('.hero-title');
-    const textOnly='Pier Luigi Cherchi'; heroTitle.innerHTML=''; let idx=0;
-    function typeWriter(){
-      if(idx<textOnly.length){
-        if(idx<11){heroTitle.textContent+=textOnly.charAt(idx);}
-        else if(idx===11){heroTitle.innerHTML='Pier Luigi <span style="color:#d4af37">'+textOnly.charAt(idx)+'</span>';}
-        else{const span=heroTitle.querySelector('span');span.textContent+=textOnly.charAt(idx);}
-        idx++; setTimeout(typeWriter,100);
+    document.querySelectorAll('[data-animate="true"], .contact-card, .social-links').forEach(el => observer.observe(el));
+
+    // Page up button
+    const pageUpBtn = document.getElementById('pageUpBtn');
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        pageUpBtn.classList.add('show');
+      } else {
+        pageUpBtn.classList.remove('show');
+      }
+    });
+    pageUpBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    // i18n translations
+    const translations = {
+      en: {
+        "nav.about": "About",
+        "nav.skills": "Skills",
+        "nav.highlights": "Highlights",
+        "nav.journey": "Journey",
+        "nav.contact": "Contact",
+        "nav.cv": "Download CV",
+
+        "hero.title": "Pier Luigi <span style='color:#d4af37'>Cherchi</span>",
+        "hero.subtitle": "Aviation Systems, Human Factors & Applied Psychology",
+        "hero.description": "I optimise complex flight operations by aligning technology, procedures and people.",
+        "hero.cta": "Cleared to takeoff",
+
+        "about.title": "About me",
+        "about.p1": "Aviation professional with a strong background in flight operations, mission systems and team leadership. I have coordinated mission-planning and debriefing activities in complex training environments, keeping aircraft and simulator data aligned while supporting small, high-performing teams under pressure.",
+        "about.p2": "I combine hands-on experience with flight data, operational workflows and digital tools with formal training in psychology and human performance. My focus is to turn complexity into clarity, so that crews, instructors and support teams can take better decisions with the right information at the right time.",
+        "about.p3": "For me, professionalism means competence, awareness and responsibility. I look for roles where I can keep bridging technology and people: improving safety, communication and reliability in everyday operations, not just in PowerPoint.",
+
+        "skills.title": "Core strengths",
+        "skills.dispatch.title": "Mission & Dispatch Operations",
+        "skills.dispatch.text": "End-to-end planning, release and monitoring in high-complexity scenarios",
+        "skills.psych.title": "Human Factors & Team Psychology",
+        "skills.psych.text": "Stress, workload and behaviour in crews and technical teams",
+        "skills.comm.title": "High-stakes Communication",
+        "skills.comm.text": "Clear, concise coordination between pilots, ATC and ground stakeholders",
+        "skills.crisis.title": "Crisis & Abnormal Management",
+        "skills.crisis.text": "ERP mindset, time-critical decisions and escalation control",
+        "skills.data.title": "Data, Performance & Meteo",
+        "skills.data.text": "From METAR/TAF and NOTAM to performance margins and route choices",
+        "skills.it.title": "IT, Systems & Integration",
+        "skills.it.text": "Server, SQL and cockpit/simulator data flows in mission-critical environments",
+
+        "portfolio.title": "Selected impact & experience highlights",
+        "portfolio.h1.title": "Mission systems integration & human-technical bridge",
+        "portfolio.h1.text": "Within Mission Planning & Debriefing (MPDS) I aligned procedures, people and data, acting as the bridge among technical departments, pilots and management. Clear handovers, aircraft–simulator data consistency and disciplined execution with a human-centred mindset, improving trust in data and reducing friction between teams.",
+        "portfolio.h2.title": "RTMS & real-time mission support",
+        "portfolio.h2.text": "Reference operator for the Real-Time Monitoring System (radar-like environment): acceptance tests and live operations, shoulder-to-shoulder with instructors and pilots. I turned complex system behaviour into brief/debrief material that crews could actually use, closing the loop between simulation, cockpit reality and training objectives.",
+        "portfolio.h3.title": "Global flight operations coverage",
+        "portfolio.h3.text": "Airline, business and state/defence aviation, as employee and independent contractor. Planned and released operations worldwide including ETOPS, oceanic and remote airports, ensuring legal, meteorological and performance compliance for multiple airframes and mission profiles, from scheduled flights to special missions.",
+        "portfolio.h4.title": "Diplomatic, medevac, VVIP & ACMI/EACMI",
+        "portfolio.h4.text": "Experience with medevac, VVIP movements (incl. Heads of State) and ACMI/EACMI. Rapid base set-up, short-notice rostering and diplomatic coordination. Focus on slots/permits, robust alternates and route choices that balance safety margins, medical urgency, cost and passenger experience.",
+        "portfolio.h5.title": "EFB, digital cockpit & crew experience",
+        "portfolio.h5.text": "End-to-end cockpit data coordination: flight folder build, briefing package, document control, app currency, performance exports and distribution. Continuous feedback from crews to keep cockpit information clear, consistent and easy to read in real-world conditions, not just on paper.",
+        "portfolio.h6.title": "Dispatch & analytical core",
+        "portfolio.h6.text": "Meteorology (SIGWX, TAF/METAR trends, WAFS), NOTAM criticality assessment, AIRAC cycle validation, performance policy tuning, contingency/redispatch and limited-scenario planning. Redispatch/re-clear logic when it genuinely benefits payload, time and engine-on-wing, not as a checkbox exercise.",
+        "portfolio.h7.title": "Performance tools & data integrity",
+        "portfolio.h7.text": "Aircraft performance profile build, testing and maintenance for planning platforms such as PPS (AIR SUPPORT) and local route-check tools. Local server supervision to keep data integrity and availability high, ensuring reliable exports towards EFB, simulators and debrief environments.",
+        "portfolio.h8.title": "Stakeholder coordination & human factor",
+        "portfolio.h8.text": "Daily liaison with ATC, handlers, CAM/part-145, medical providers and ground ops. Time-bound communication, balancing passenger care, medical or training priorities, safety margins and commercial constraints—helping crews stay confident and mentally free to focus on flying.",
+
+        "journey.title": "Professional journey",
+        "journey.2019a.date": "2019",
+        "journey.2019a.title": "Flight Dispatcher",
+        "journey.2019a.text": "Various airlines (Malta, Lithuania, France)",
+        "journey.2019b.date": "2019",
+        "journey.2019b.title": "EASA Flight Dispatcher Licence",
+        "journey.2019b.text": "EASA/ICAO licence and TEA ICAO Level 4",
+        "journey.2020.date": "2020",
+        "journey.2020.title": "Senior Flight Dispatcher",
+        "journey.2020.text": "Independent contractor (Malta, Italy)",
+        "journey.2023.date": "2023",
+        "journey.2023.title": "Mission Systems Team Leader",
+        "journey.2023.text": "MPDS Coordinator – Leonardo / CAE / Italian Air Force IFTS",
+        "journey.2025.date": "2025",
+        "journey.2025.title": "BSc in Applied Psychology",
+        "journey.2025.text": "Bachelor in Applied Psychology (L-24)",
+
+        "services.title": "How I can help",
+        "services.dispatch.label": "Flight operations & dispatch support:",
+        "services.dispatch.text": "planning, release and monitoring with a practical, safety-driven mindset",
+        "services.hf.label": "Human Factors & safety culture:",
+        "services.hf.text": "from communication habits to stress and workload management in operations",
+        "services.training.label": "Training & coaching:",
+        "services.training.text": "junior dispatcher development, CRM-oriented briefings and system-use coaching",
+        "services.erp.label": "Procedures & emergency readiness:",
+        "services.erp.text": "support in aligning SOPs, ERP and real human behaviour during abnormal situations",
+
+        "contact.title": "Let’s talk",
+        "contact.subtitle": "I’m open to roles in airlines, training organisations and defence/mission-based aviation, as well as consulting projects where flight operations, systems and human factors need to work together.",
+        "contact.email.title": "Email",
+        "contact.email.text": "Usually replying within 24 hours",
+        "contact.phone.title": "Phone",
+        "contact.phone.text": "Mon–Fri · 09:00–18:00 CET",
+        "contact.location.title": "Location",
+        "contact.location.text": "Based in Italy · Available across Europe and beyond",
+
+        "social.title": "Let’s connect on LinkedIn",
+        "footer.text": "© 2025 Pier Luigi Cherchi — Flight Operations, Mission Systems & Human Factors."
+      },
+
+      it: {
+        "nav.about": "Chi sono",
+        "nav.skills": "Competenze",
+        "nav.highlights": "Highlights",
+        "nav.journey": "Percorso",
+        "nav.contact": "Contatti",
+        "nav.cv": "Scarica CV",
+
+        "hero.title": "Pier Luigi <span style='color:#d4af37'>Cherchi</span>",
+        "hero.subtitle": "Sistemi aeronautici, Human Factors & Psicologia applicata",
+        "hero.description": "Ottimizzo le operazioni di volo complesse allineando tecnologia, procedure e persone.",
+        "hero.cta": "Pronto al decollo",
+
+        "about.title": "Chi sono",
+        "about.p1": "Professionista dell’aviazione con una solida esperienza in flight operations, mission systems e leadership di team. Ho coordinato attività di mission planning e debriefing in contesti addestrativi complessi, mantenendo allineati i dati tra aeromobili e simulatori e supportando piccoli team ad alte prestazioni sotto pressione.",
+        "about.p2": "Unisco esperienza concreta su dati di volo, flussi operativi e strumenti digitali con una formazione in psicologia e performance umana. Il mio obiettivo è trasformare la complessità in chiarezza, così che equipaggi, istruttori e team di supporto possano prendere decisioni migliori con le informazioni giuste al momento giusto.",
+        "about.p3": "Per me la professionalità è competenza, consapevolezza e responsabilità. Cerco ruoli in cui poter continuare a fare da ponte tra tecnologia e persone: migliorando sicurezza, comunicazione e affidabilità nelle operazioni quotidiane, non solo sulle slide.",
+
+        "skills.title": "Punti di forza",
+        "skills.dispatch.title": "Mission & Dispatch Operations",
+        "skills.dispatch.text": "Pianificazione, rilascio e monitoraggio end-to-end in scenari complessi",
+        "skills.psych.title": "Human Factors & Psicologia dei team",
+        "skills.psych.text": "Stress, carico di lavoro e comportamento di equipaggi e team tecnici",
+        "skills.comm.title": "Comunicazione in contesti critici",
+        "skills.comm.text": "Coordinamento chiaro e conciso tra piloti, ATC e stakeholder a terra",
+        "skills.crisis.title": "Gestione crisi e anomali",
+        "skills.crisis.text": "Mindset ERP, decisioni time-critical e gestione delle escalation",
+        "skills.data.title": "Dati, performance & meteo",
+        "skills.data.text": "Dai METAR/TAF e NOTAM ai margini di performance e scelte di rotta",
+        "skills.it.title": "IT, sistemi & integrazione",
+        "skills.it.text": "Server, SQL e flussi dati cockpit/simulatori in ambienti mission-critical",
+
+        "portfolio.title": "Impatto e esperienze significative",
+        "portfolio.h1.title": "Integrazione mission systems & ponte umano-tecnico",
+        "portfolio.h1.text": "Nel contesto Mission Planning & Debriefing (MPDS) ho allineato procedure, persone e dati, fungendo da ponte tra reparti tecnici, piloti e management. Handover chiari, coerenza tra dati di aeromobili e simulatori ed esecuzione disciplinata con una prospettiva human-centred, aumentando la fiducia nei dati e riducendo gli attriti tra team.",
+        "portfolio.h2.title": "RTMS & supporto missioni in tempo reale",
+        "portfolio.h2.text": "Operatore di riferimento per il Real-Time Monitoring System (ambiente tipo radar): test di accettazione e operazioni live fianco a fianco con istruttori e piloti. Ho trasformato il comportamento complesso del sistema in materiale di brief/debrief realmente utile, chiudendo il cerchio tra simulazione, realtà di cockpit e obiettivi addestrativi.",
+        "portfolio.h3.title": "Copertura globale delle operazioni di volo",
+        "portfolio.h3.text": "Aviazione di linea, business e state/defence, come dipendente e consulente indipendente. Ho pianificato e rilasciato operazioni worldwide, incluse ETOPS, rotte oceaniche e aeroporti remoti, garantendo compliance legale, meteo e di performance per diversi tipi di aeromobili e profili di missione, dai voli schedulati alle missioni speciali.",
+        "portfolio.h4.title": "Diplomatico, medevac, VVIP & ACMI/EACMI",
+        "portfolio.h4.text": "Esperienza in voli medevac, movimenti VVIP (inclusi Capi di Stato) e ACMI/EACMI. Set-up rapido di basi, turnazioni a breve preavviso e coordinamento diplomatico. Focus su slot/permessi, alternati robusti e scelte di rotta che bilanciano margini di sicurezza, urgenza medica, costi e qualità dell’esperienza passeggeri.",
+        "portfolio.h5.title": "EFB, digital cockpit & esperienza equipaggi",
+        "portfolio.h5.text": "Coordinamento end-to-end dei dati di cockpit: costruzione flight folder, briefing package, controllo documenti, currency delle app, export di performance e distribuzione. Ciclo continuo di feedback con gli equipaggi per mantenere le informazioni di bordo chiare, coerenti e leggibili nelle condizioni operative reali, non solo sulla carta.",
+        "portfolio.h6.title": "Cuore analitico di dispatch",
+        "portfolio.h6.text": "Meteorologia (SIGWX, trend TAF/METAR, WAFS), valutazione critica dei NOTAM, validazione AIRAC, tuning delle policy di performance, pianificazione di contingenze/redispatch e scenari limitanti. Logiche di redispatch/re-clear solo quando portano un beneficio reale a payload, tempi ed engine-on-wing, non come esercizio formale.",
+        "portfolio.h7.title": "Strumenti di performance & integrità dei dati",
+        "portfolio.h7.text": "Costruzione, test e manutenzione di profili di performance per piattaforme di planning come PPS (AIR SUPPORT) e strumenti locali di route-check. Supervisione di server locali per mantenere elevati integrità e disponibilità dei dati, garantendo export affidabili verso EFB, simulatori e ambienti di debrief.",
+        "portfolio.h8.title": "Coordinamento stakeholder & fattore umano",
+        "portfolio.h8.text": "Interfaccia quotidiana con ATC, handler, CAM/part-145, provider medici e ground ops. Comunicazioni time-bound, bilanciando cura del passeggero, priorità addestrative o mediche, margini di sicurezza e vincoli commerciali — aiutando gli equipaggi a rimanere sicuri e mentalmente liberi di concentrarsi sul volo.",
+
+        "journey.title": "Percorso professionale",
+        "journey.2019a.date": "2019",
+        "journey.2019a.title": "Flight Dispatcher",
+        "journey.2019a.text": "Diverse compagnie (Malta, Lituania, Francia)",
+        "journey.2019b.date": "2019",
+        "journey.2019b.title": "Licenza EASA Flight Dispatcher",
+        "journey.2019b.text": "Licenza EASA/ICAO e TEA ICAO Level 4",
+        "journey.2020.date": "2020",
+        "journey.2020.title": "Senior Flight Dispatcher",
+        "journey.2020.text": "Consulente indipendente (Malta, Italia)",
+        "journey.2023.date": "2023",
+        "journey.2023.title": "Mission Systems Team Leader",
+        "journey.2023.text": "MPDS Coordinator – Leonardo / CAE / Italian Air Force IFTS",
+        "journey.2025.date": "2025",
+        "journey.2025.title": "Laurea in Psicologia applicata",
+        "journey.2025.text": "Laurea triennale in Psicologia Applicata (L-24)",
+
+        "services.title": "Come posso essere utile",
+        "services.dispatch.label": "Supporto flight operations & dispatch:",
+        "services.dispatch.text": "pianificazione, rilascio e monitoraggio con un approccio pratico e orientato alla sicurezza",
+        "services.hf.label": "Human Factors & safety culture:",
+        "services.hf.text": "dalle abitudini comunicative alla gestione di stress e carico di lavoro nelle operations",
+        "services.training.label": "Formazione & coaching:",
+        "services.training.text": "sviluppo di junior dispatcher, brief in chiave CRM e utilizzo consapevole dei sistemi",
+        "services.erp.label": "Procedure & gestione emergenze:",
+        "services.erp.text": "supporto nell’allineare SOP, ERP e comportamento reale delle persone in situazioni anomale",
+
+        "contact.title": "Parliamone",
+        "contact.subtitle": "Sono aperto a ruoli in compagnie aeree, training organisation e contesti defence/mission-based, oltre che a progetti di consulenza in cui flight operations, sistemi e Human Factors devono lavorare davvero insieme.",
+        "contact.email.title": "Email",
+        "contact.email.text": "Di solito rispondo entro 24 ore",
+        "contact.phone.title": "Telefono",
+        "contact.phone.text": "Lun–Ven · 09:00–18:00 CET",
+        "contact.location.title": "Location",
+        "contact.location.text": "Con base in Italia · Disponibile in Europa e oltre",
+
+        "social.title": "Collegiamoci su LinkedIn",
+        "footer.text": "© 2025 Pier Luigi Cherchi — Flight Operations, Mission Systems & Human Factors."
+      }
+    };
+
+    function setLanguage(lang) {
+      const elements = document.querySelectorAll("[data-i18n]");
+      elements.forEach(el => {
+        const key = el.getAttribute("data-i18n");
+        const translation = translations[lang] && translations[lang][key];
+        if (!translation) return;
+
+        if (translation.includes("<br") || translation.includes("<span") || translation.includes("</")) {
+          el.innerHTML = translation;
+        } else {
+          el.textContent = translation;
+        }
+      });
+
+      document.documentElement.setAttribute("lang", lang);
+      localStorage.setItem("siteLang", lang);
+
+      const btnEn = document.getElementById("lang-en");
+      const btnIt = document.getElementById("lang-it");
+      if (btnEn && btnIt) {
+        if (lang === "en") {
+          btnEn.classList.add("active");
+          btnIt.classList.remove("active");
+        } else {
+          btnIt.classList.add("active");
+          btnEn.classList.remove("active");
+        }
       }
     }
-    window.addEventListener('load',()=>setTimeout(typeWriter,500));
 
-    // Page up
-    const pageUpBtn=document.getElementById('pageUpBtn');
-    window.addEventListener('scroll',()=>{if(window.pageYOffset>300){pageUpBtn.classList.add('show')}else{pageUpBtn.classList.remove('show')}})
-    pageUpBtn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+    document.getElementById("lang-en").addEventListener("click", () => setLanguage("en"));
+    document.getElementById("lang-it").addEventListener("click", () => setLanguage("it"));
+
+    window.addEventListener("DOMContentLoaded", () => {
+      const saved = localStorage.getItem("siteLang") || "en";
+      setLanguage(saved);
+    });
   </script>
 </body>
 </html>
